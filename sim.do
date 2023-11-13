@@ -2,13 +2,13 @@ if {[file isdirectory work]} { vdel -all -lib work }
 vlib work
 vmap work work
 
-vlog -work work fibonacci.v
-vlog -work work timer.v
-vlog -work work dcm.v
-vlog -work work dspl_drv_NexysA7.v
-vlog -work work dm.v
-vlog -work work wrapper.v
-vlog -work work edge_detector.v
+vlog -work work fibonacci-folder/fibonacci.v
+vlog -work work timer-folder/timer.v
+vlog -work work digital-clock-manager/dcm.v
+vlog -work work synth-modules/dspl_drv_NexysA7.v
+vlog -work work display-manager/dm.v
+vlog -work work wrapper/wrapper.v
+vlog -work work synth-modules/edge_detector_no_count.v
 vlog -work work top.v
 vlog -work work tb.v
 
