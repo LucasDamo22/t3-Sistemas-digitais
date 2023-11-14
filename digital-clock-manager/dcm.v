@@ -13,10 +13,11 @@ reg [23:0] count_10hz;
 reg[29:0]  count_mult_hz;
 reg[7:0] multiplier;
 reg clock_1_int, clock_2_int;
+reg [2:0] prog_reg;
 
 assign clock_1 = clock_1_int;
 assign clock_2 = clock_2_int;
-assign prog_out = prog_in;
+assign prog_out = prog_reg;
 
 always@(posedge clock or posedge reset)begin 
   if(reset) begin 
@@ -37,7 +38,7 @@ always@(posedge clock or posedge reset) begin
     multiplier <= 1'd1;
   end else begin
     count_mult_hz <= count_mult_hz + 1'b1;
-    if(count_mult_hz == COUNT_10 * multiplier) begin
+    if(count_mult_hz >= COUNT_10 * multiplier) begin
       clock_2_int <= ~clock_2_int;
       count_mult_hz <= 0;
     end
@@ -45,6 +46,15 @@ always@(posedge clock or posedge reset) begin
   end
 end
 
+always@(posedge update_clock or posedge reset) begin
+  if(reset)begin
+    prog_reg <= 3'd0;
+  end else begin
+    if(update_clock == 1'b1) begin
+      prog_reg <= prog_in;
+    end
+  end
+end
 always@(*) begin
   if(update_clock == 1'b1)begin
       case(prog_in)
