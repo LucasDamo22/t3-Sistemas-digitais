@@ -1,4 +1,4 @@
-module edge_detector_no_count
+module edge_detector
 (
   input clock, reset, din,
   output rising
