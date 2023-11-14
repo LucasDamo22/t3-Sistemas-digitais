@@ -1,24 +1,35 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate -divider TOP
+add wave -noupdate /tb/DUT/clock
+add wave -noupdate /tb/DUT/reset
+add wave -noupdate /tb/DUT/EA
 add wave -noupdate /tb/DUT/start_f
+add wave -noupdate /tb/DUT/start_f_ed
 add wave -noupdate /tb/DUT/start_t
+add wave -noupdate /tb/DUT/start_t_ed
 add wave -noupdate /tb/DUT/stop_f_t
+add wave -noupdate /tb/DUT/stop_f_t_ed
+add wave -noupdate /tb/DUT/buffer_full
 add wave -noupdate /tb/DUT/parity
+add wave -noupdate /tb/DUT/prog
+add wave -noupdate /tb/DUT/update
+add wave -noupdate /tb/DUT/update_ed
 add wave -noupdate -divider DCM
-add wave -noupdate -group DCM /tb/DUT/mod/COUNT_10
-add wave -noupdate -group DCM /tb/DUT/mod/clock
-add wave -noupdate -group DCM /tb/DUT/mod/reset
-add wave -noupdate -group DCM /tb/DUT/mod/update_clock
-add wave -noupdate -group DCM /tb/DUT/mod/prog_in
-add wave -noupdate -group DCM /tb/DUT/mod/prog_out
-add wave -noupdate -group DCM /tb/DUT/mod/clock_1
-add wave -noupdate -group DCM /tb/DUT/mod/clock_2
-add wave -noupdate -group DCM /tb/DUT/mod/count_10hz
-add wave -noupdate -group DCM /tb/DUT/mod/count_mult_hz
-add wave -noupdate -group DCM /tb/DUT/mod/multiplier
-add wave -noupdate -group DCM /tb/DUT/mod/clock_1_int
-add wave -noupdate -group DCM /tb/DUT/mod/clock_2_int
+add wave -noupdate -expand -group DCM /tb/DUT/mod/COUNT_10
+add wave -noupdate -expand -group DCM /tb/DUT/mod/clock
+add wave -noupdate -expand -group DCM /tb/DUT/mod/reset
+add wave -noupdate -expand -group DCM /tb/DUT/mod/update_clock
+add wave -noupdate -expand -group DCM /tb/DUT/mod/prog_in
+add wave -noupdate -expand -group DCM /tb/DUT/mod/prog_out
+add wave -noupdate -expand -group DCM /tb/DUT/mod/prog_reg
+add wave -noupdate -expand -group DCM /tb/DUT/mod/clock_1
+add wave -noupdate -expand -group DCM /tb/DUT/mod/clock_2
+add wave -noupdate -expand -group DCM /tb/DUT/mod/count_10hz
+add wave -noupdate -expand -group DCM /tb/DUT/mod/count_mult_hz
+add wave -noupdate -expand -group DCM /tb/DUT/mod/multiplier
+add wave -noupdate -expand -group DCM /tb/DUT/mod/clock_1_int
+add wave -noupdate -expand -group DCM /tb/DUT/mod/clock_2_int
 add wave -noupdate -divider FIB
 add wave -noupdate -group FIBO /tb/DUT/fibo/MAX_FIBO
 add wave -noupdate -group FIBO /tb/DUT/fibo/reset
@@ -56,8 +67,15 @@ add wave -noupdate -group WRAPPER /tb/DUT/wrapped/data_2_valid_int
 add wave -noupdate -group WRAPPER /tb/DUT/wrapped/empty
 add wave -noupdate -group WRAPPER /tb/DUT/wrapped/full
 add wave -noupdate -divider DM
+add wave -noupdate -expand -group DM /tb/DUT/dm_manag/clock
+add wave -noupdate -expand -group DM /tb/DUT/dm_manag/reset
+add wave -noupdate -expand -group DM /tb/DUT/dm_manag/gen_mod
+add wave -noupdate -expand -group DM /tb/DUT/dm_manag/prog
+add wave -noupdate -expand -group DM /tb/DUT/dm_manag/data_2
+add wave -noupdate -expand -group DM /tb/DUT/dm_manag/an
+add wave -noupdate -expand -group DM /tb/DUT/dm_manag/dec_cat
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {20942 ns} 0}
+WaveRestoreCursors {{Cursor 1} {12045 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
