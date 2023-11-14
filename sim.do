@@ -6,6 +6,7 @@ vlog -work work fibonacci-folder/fibonacci.v
 vlog -work work timer-folder/timer.v
 vlog -work work digital-clock-manager/dcm.v
 vlog -work work synth-modules/dspl_drv_NexysA7.v
+vlog -work work synth-modules/edge_detector_no_count.v
 vlog -work work display-manager/dm.v
 vlog -work work wrapper/wrapper.v
 vlog -work work synth-modules/edge_detector_no_count.v
