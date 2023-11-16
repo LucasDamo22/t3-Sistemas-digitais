@@ -9,9 +9,10 @@ vlog -work work synth-modules/dspl_drv_NexysA7.v
 vlog -work work synth-modules/edge_detector_no_count.v
 vlog -work work display-manager/dm.v
 vlog -work work wrapper/wrapper.v
+vlog -work work parity/parity.v
 vlog -work work synth-modules/edge_detector_no_count.v
-vlog -work work top.v
-vlog -work work tb.v
+vlog -work work top/top.v
+vlog -work work top/tb.v
 
 vsim -voptargs=+acc=lprn -t ns work.tb
 

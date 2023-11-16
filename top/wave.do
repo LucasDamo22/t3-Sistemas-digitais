@@ -15,41 +15,45 @@ add wave -noupdate /tb/DUT/parity
 add wave -noupdate /tb/DUT/prog
 add wave -noupdate /tb/DUT/update
 add wave -noupdate /tb/DUT/update_ed
+add wave -noupdate /tb/DUT/f_valid_int
+add wave -noupdate /tb/DUT/t_valid_int
+add wave -noupdate /tb/DUT/data_1_en_int
+add wave -noupdate /tb/DUT/gen_mod_int
 add wave -noupdate -divider DCM
-add wave -noupdate -expand -group DCM /tb/DUT/mod/COUNT_10
-add wave -noupdate -expand -group DCM /tb/DUT/mod/clock
-add wave -noupdate -expand -group DCM /tb/DUT/mod/reset
-add wave -noupdate -expand -group DCM /tb/DUT/mod/update_clock
-add wave -noupdate -expand -group DCM /tb/DUT/mod/prog_in
-add wave -noupdate -expand -group DCM /tb/DUT/mod/prog_out
-add wave -noupdate -expand -group DCM /tb/DUT/mod/prog_reg
-add wave -noupdate -expand -group DCM /tb/DUT/mod/clock_1
-add wave -noupdate -expand -group DCM /tb/DUT/mod/clock_2
-add wave -noupdate -expand -group DCM /tb/DUT/mod/count_10hz
-add wave -noupdate -expand -group DCM /tb/DUT/mod/count_mult_hz
-add wave -noupdate -expand -group DCM /tb/DUT/mod/multiplier
-add wave -noupdate -expand -group DCM /tb/DUT/mod/clock_1_int
-add wave -noupdate -expand -group DCM /tb/DUT/mod/clock_2_int
+add wave -noupdate -group DCM /tb/DUT/mod/COUNT_10
+add wave -noupdate -group DCM /tb/DUT/mod/clock
+add wave -noupdate -group DCM /tb/DUT/mod/reset
+add wave -noupdate -group DCM /tb/DUT/mod/update_clock
+add wave -noupdate -group DCM /tb/DUT/mod/prog_in
+add wave -noupdate -group DCM /tb/DUT/mod/prog_out
+add wave -noupdate -group DCM /tb/DUT/mod/prog_reg
+add wave -noupdate -group DCM /tb/DUT/mod/clock_1
+add wave -noupdate -group DCM /tb/DUT/mod/clock_2
+add wave -noupdate -group DCM /tb/DUT/mod/count_10hz
+add wave -noupdate -group DCM /tb/DUT/mod/count_mult_hz
+add wave -noupdate -group DCM /tb/DUT/mod/multiplier
+add wave -noupdate -group DCM /tb/DUT/mod/clock_1_int
+add wave -noupdate -group DCM /tb/DUT/mod/clock_2_int
 add wave -noupdate -divider FIB
-add wave -noupdate -group FIBO /tb/DUT/fibo/MAX_FIBO
-add wave -noupdate -group FIBO /tb/DUT/fibo/reset
-add wave -noupdate -group FIBO /tb/DUT/fibo/clock
-add wave -noupdate -group FIBO /tb/DUT/fibo/f_en
-add wave -noupdate -group FIBO /tb/DUT/fibo/f_valid
-add wave -noupdate -group FIBO /tb/DUT/fibo/f_out
-add wave -noupdate -group FIBO /tb/DUT/fibo/soma_b
-add wave -noupdate -group FIBO /tb/DUT/fibo/resultado
-add wave -noupdate -group FIBO /tb/DUT/fibo/f_out_int
-add wave -noupdate -group FIBO /tb/DUT/fibo/f_valid_int
+add wave -noupdate -expand -group FIBO /tb/DUT/fibo/MAX_FIBO
+add wave -noupdate -expand -group FIBO /tb/DUT/fibo/reset
+add wave -noupdate -expand -group FIBO /tb/DUT/fibo/clock
+add wave -noupdate -expand -group FIBO /tb/DUT/fibo/f_en
+add wave -noupdate -expand -group FIBO /tb/DUT/fibo/f_valid
+add wave -noupdate -expand -group FIBO /tb/DUT/fibo/f_out
+add wave -noupdate -expand -group FIBO /tb/DUT/fibo/soma_b
+add wave -noupdate -expand -group FIBO /tb/DUT/fibo/resultado
+add wave -noupdate -expand -group FIBO /tb/DUT/fibo/f_out_int
+add wave -noupdate -expand -group FIBO /tb/DUT/fibo/f_valid_int
 add wave -noupdate -divider TIMER
-add wave -noupdate -group TIMER /tb/DUT/tim/reset
-add wave -noupdate -group TIMER /tb/DUT/tim/clock
-add wave -noupdate -group TIMER /tb/DUT/tim/t_en
-add wave -noupdate -group TIMER /tb/DUT/tim/t_out
-add wave -noupdate -group TIMER /tb/DUT/tim/t_valid
-add wave -noupdate -group TIMER /tb/DUT/tim/count
-add wave -noupdate -group TIMER /tb/DUT/tim/t_valid_int
-add wave -noupdate -group TIMER /tb/DUT/tim/t_en_int
+add wave -noupdate -expand -group TIMER /tb/DUT/tim/reset
+add wave -noupdate -expand -group TIMER /tb/DUT/tim/clock
+add wave -noupdate -expand -group TIMER /tb/DUT/tim/t_en
+add wave -noupdate -expand -group TIMER /tb/DUT/tim/t_out
+add wave -noupdate -expand -group TIMER /tb/DUT/tim/t_valid
+add wave -noupdate -expand -group TIMER /tb/DUT/tim/count
+add wave -noupdate -expand -group TIMER /tb/DUT/tim/t_valid_int
+add wave -noupdate -expand -group TIMER /tb/DUT/tim/t_en_int
 add wave -noupdate -divider WRAPPER
 add wave -noupdate -group WRAPPER /tb/DUT/wrapped/clock_1
 add wave -noupdate -group WRAPPER /tb/DUT/wrapped/clock_2
@@ -75,7 +79,7 @@ add wave -noupdate -expand -group DM /tb/DUT/dm_manag/data_2
 add wave -noupdate -expand -group DM /tb/DUT/dm_manag/an
 add wave -noupdate -expand -group DM /tb/DUT/dm_manag/dec_cat
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {12045 ns} 0}
+WaveRestoreCursors {{Cursor 1} {3030 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -91,4 +95,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ns} {52500 ns}
+WaveRestoreZoom {0 ns} {40606 ns}

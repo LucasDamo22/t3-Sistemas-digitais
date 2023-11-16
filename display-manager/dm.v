@@ -17,6 +17,8 @@ dspl_drv_NexysA7 dspl(.clock(clock),
                       .d4({1'b1, data_2[15:12],1'b0}),
                       .d5({6'b0}),
                       .d6({1'b1,{2'b0,gen_mod}, 1'b0}),
-                      .d7({7'b0}),
-                      .d8({1'b1,{1'b0,prog}, 1'b0}));
+                      .d7({6'b0}),
+                      .d8({1'b1,{1'b0,prog}, 1'b0}),
+                      .an(an),
+                      .dec_cat(dec_cat));
 endmodule

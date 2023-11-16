@@ -10,8 +10,7 @@ ifndef OUT_VSIM
 	CMD := $(CMD) module load modelsim ;
 endif
 
-#CMD := $(CMD) terminator -m -e 'multitail ../logs/output*.txt -s 2' &
-#CMD := $(CMD) gnome-terminal -- bash -c "multitail ../logs/output*.txt -s 2; exec bash" &
+
 CMD := $(CMD) vsim -do sim.do 
 
 all:

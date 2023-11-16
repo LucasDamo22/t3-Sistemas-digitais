@@ -4,9 +4,9 @@ module dcm #(parameter COUNT_10 = 5_000_000)
   input reset,
   input update_clock,
   input [2:0]prog_in,
-  output [2:0]prog_out,
   output clock_1,
-  output clock_2
+  output clock_2,
+  output [2:0]prog_out
 );
 
 reg [23:0] count_10hz;
@@ -35,7 +35,7 @@ always@(posedge clock or posedge reset) begin
   if(reset)begin
     count_mult_hz <= 0;
     clock_2_int <= 0;
-    multiplier <= 1'd1;
+    //multiplier <= 1'd1;
   end else begin
     count_mult_hz <= count_mult_hz + 1'b1;
     if(count_mult_hz >= COUNT_10 * multiplier) begin

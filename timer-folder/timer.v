@@ -15,12 +15,14 @@ module timer
     always @(posedge clock or posedge reset) begin
         if(reset) begin
             count <= 16'b0;
+            t_valid_int <= 1'b0;
+        end else begin
+            if(t_en) begin
+                count <= count + 1;
+            end
+            t_en_int = t_en;
+            t_valid_int <= t_en_int;
         end
-        else if(t_en) begin
-            count <= count + 1;
-        end
-        t_en_int = t_en;
-        t_valid_int <= t_en_int;
     end
     
     assign t_out = count;

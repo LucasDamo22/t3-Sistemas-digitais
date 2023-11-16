@@ -4,7 +4,7 @@ module tb;
 
   reg clk, reset, start_f, start_t, update, stop_f_t;
   reg [2:0] prog;
-  wire [5:0] led;
+  wire [5:0] LED;
   wire [7:0] an, dec_cat;
   wire parity;
 
@@ -76,8 +76,12 @@ module tb;
     stop_f_t  = 1'b1;
     #10;
     stop_f_t  = 1'b0;
+    #50
+    reset = 1'b1;
+    #300 
+    reset = 1'b0;
   end
 
-  top DUT(.reset(reset), .clock(clk), .parity(parity), .start_f(start_f), .start_t(start_t), .update(update), .stop_f_t(stop_f_t), .prog(prog), .led(led), .an(an), .dec_cat(dec_cat));
+  top DUT(.reset(reset), .clock(clk), .parity(parity), .start_f(start_f), .start_t(start_t), .update(update), .stop_f_t(stop_f_t), .prog(prog), .LED(LED), .an(an), .dec_cat(dec_cat));
 
 endmodule 

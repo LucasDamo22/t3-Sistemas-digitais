@@ -1,0 +1,339 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Nov 16 12:25:43 2023
+# Process ID: 22928
+# Current directory: /home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/synth/prod_cons_synth/prod_cons_synth.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/synth/prod_cons_synth/prod_cons_synth.runs/synth_1/top.vds
+# Journal file: /home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/synth/prod_cons_synth/prod_cons_synth.runs/synth_1/vivado.jou
+# Running On: paxos.inf.pucrs.br, OS: Linux, CPU Frequency: 1199.963 MHz, CPU Physical cores: 14, Host memory: 67063 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/synth/prod_cons_synth/prod_cons_synth.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/synth/prod_cons_synth/prod_cons_synth.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23709
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2171.281 ; gain = 403.699 ; free physical = 2447 ; free virtual = 90775
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/top/top.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/top/top.v:56]
+INFO: [Synth 8-6157] synthesizing module 'parity_check' [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/parity/parity.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'parity_check' (0#1) [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/parity/parity.v:1]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector' [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/synth-modules/edge_detector_sintese.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector' (0#1) [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/synth-modules/edge_detector_sintese.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dcm' [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/digital-clock-manager/dcm.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dcm' (0#1) [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/digital-clock-manager/dcm.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fibonacci' [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/fibonacci-folder/fibonacci.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fibonacci' (0#1) [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/fibonacci-folder/fibonacci.v:1]
+INFO: [Synth 8-6157] synthesizing module 'timer' [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/timer-folder/timer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (0#1) [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/timer-folder/timer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'wrapper' [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/wrapper/wrapper.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'wrapper' (0#1) [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/wrapper/wrapper.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dm' [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/display-manager/dm.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dspl_drv_NexysA7' [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/synth-modules/dspl_drv_NexysA7.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dspl_drv_NexysA7' (0#1) [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/synth-modules/dspl_drv_NexysA7.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dm' (0#1) [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/display-manager/dm.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/top/top.v:1]
+WARNING: [Synth 8-6014] Unused sequential element t_en_int_reg was removed.  [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/timer-folder/timer.v:23]
+WARNING: [Synth 8-7137] Register t_buffer_reg in module wrapper has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-7137] Register data_2_valid_int_reg in module wrapper has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/wrapper/wrapper.v:41]
+WARNING: [Synth 8-4767] Trying to implement RAM 't_buffer_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "t_buffer_reg" dissolved into registers
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2249.234 ; gain = 481.652 ; free physical = 2349 ; free virtual = 90677
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2264.062 ; gain = 496.480 ; free physical = 2345 ; free virtual = 90673
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2264.062 ; gain = 496.480 ; free physical = 2345 ; free virtual = 90673
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2264.062 ; gain = 0.000 ; free physical = 2345 ; free virtual = 90673
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/Nexys-A7-100T-TP2.xdc]
+Finished Parsing XDC File [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/Nexys-A7-100T-TP2.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/Nexys-A7-100T-TP2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2412.812 ; gain = 0.000 ; free physical = 2334 ; free virtual = 90662
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2412.812 ; gain = 0.000 ; free physical = 2334 ; free virtual = 90662
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2333 ; free virtual = 90661
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2333 ; free virtual = 90661
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2333 ; free virtual = 90662
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'EA_reg' in module 'edge_detector'
+INFO: [Synth 8-802] inferred FSM for state register 'EA_reg' in module 'top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                              001 |                               00
+                 iSTATE1 |                              010 |                               01
+                  iSTATE |                              100 |                               10
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'EA_reg' using encoding 'one-hot' in module 'edge_detector'
+WARNING: [Synth 8-327] inferring latch for variable 'multiplier_reg' [/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/digital-clock-manager/dcm.v:62]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                           000010 |                              000
+                S_COMM_F |                           100000 |                              001
+                S_WAIT_F |                           010000 |                              010
+                S_COMM_T |                           001000 |                              011
+                S_WAIT_T |                           000100 |                              100
+             S_BUF_EMPTY |                           000001 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'EA_reg' using encoding 'one-hot' in module 'top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2332 ; free virtual = 90662
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 4     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 3     
++---XORs : 
+	               16 Bit    Wide XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               17 Bit    Registers := 4     
+	               16 Bit    Registers := 11    
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   3 Input   17 Bit        Muxes := 4     
+	   2 Input   16 Bit        Muxes := 3     
+	   8 Input    8 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 11    
+	   3 Input    3 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 16    
+	   2 Input    1 Bit        Muxes := 11    
+	   6 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mod/count_mult_hz2, operation Mode is: (A:0x4c4b40)*B.
+DSP Report: operator mod/count_mult_hz2 is absorbed into DSP mod/count_mult_hz2.
+WARNING: [Synth 8-3917] design top has port LED[5] driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (start_fib/FSM_onehot_EA_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (start_tim/FSM_onehot_EA_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (update_c/FSM_onehot_EA_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (stop_fib_tim/FSM_onehot_EA_reg[2]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2317 ; free virtual = 90650
+---------------------------------------------------------------------------------
+ Sort Area is  mod/count_mult_hz2_0 : 0 0 : 455 455 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dcm         | (A:0x4c4b40)*B | 23     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2314 ; free virtual = 90647
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2302 ; free virtual = 90636
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2301 ; free virtual = 90634
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2304 ; free virtual = 90637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2304 ; free virtual = 90637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2304 ; free virtual = 90637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2304 ; free virtual = 90637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2304 ; free virtual = 90637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2304 ; free virtual = 90637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dcm         | A*B         | 23     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |    54|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |     4|
+|5     |LUT2    |   131|
+|6     |LUT3    |    67|
+|7     |LUT4    |    55|
+|8     |LUT5    |    51|
+|9     |LUT6    |   111|
+|10    |MUXF7   |    16|
+|11    |FDCE    |   244|
+|12    |FDPE    |    12|
+|13    |FDRE    |   129|
+|14    |LD      |     8|
+|15    |IBUF    |     9|
+|16    |OBUF    |    23|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2304 ; free virtual = 90637
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2412.812 ; gain = 496.480 ; free physical = 2304 ; free virtual = 90637
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2412.812 ; gain = 645.230 ; free physical = 2304 ; free virtual = 90637
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2412.812 ; gain = 0.000 ; free physical = 2588 ; free virtual = 90921
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2412.812 ; gain = 0.000 ; free physical = 2587 ; free virtual = 90921
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LD => LDCE: 8 instances
+
+Synth Design complete | Checksum: b2fd81f7
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 2412.812 ; gain = 988.176 ; free physical = 2587 ; free virtual = 90921
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1724.784; main = 1413.994; forked = 342.163
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3688.500; main = 2412.816; forked = 1307.699
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2436.824 ; gain = 0.000 ; free physical = 2587 ; free virtual = 90921
+INFO: [Common 17-1381] The checkpoint '/home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/synth/prod_cons_synth/prod_cons_synth.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 16 12:26:17 2023...

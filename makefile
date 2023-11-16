@@ -10,9 +10,8 @@ ifndef OUT_VSIM
 	CMD := $(CMD) module load modelsim ;
 endif
 
-#CMD := $(CMD) terminator -m -e 'multitail ../logs/output*.txt -s 2' &
-#CMD := $(CMD) gnome-terminal -- bash -c "multitail ../logs/output*.txt -s 2; exec bash" &
-CMD := $(CMD) vsim -do sim.do 
+
+CMD := $(CMD) vsim -do ./top/sim.do 
 
 all:
 	$(CMD)
@@ -20,6 +19,6 @@ all:
 clean: 
 	rm -rf ./work
 	rm -rf ./transcript
-	rm -rf ./vsim.dbg
+	rm -rf ./top/vsim.dbg
 	rm -rf ./vsim.wlf
-	rm -rf ./vsim_stacktrace.vstf
+	rm -rf ./top/vsim_stacktrace.vstf
