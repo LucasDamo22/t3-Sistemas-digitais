@@ -18,12 +18,12 @@ module tb;
 
   initial
   begin
-    //reset = 1'b1;
+    reset = 1'b1;
     #30;
     reset = 1'b0;
     start_f  = 1'b0;
     start_t  = 1'b0;
-    //stop_f_t = 1'b0;
+    stop_f_t = 1'b0;
     update   = 1'b0;
     prog = 3'd3;
     #80
@@ -36,18 +36,18 @@ module tb;
     start_t  = 1'b1;
     #10;
     start_t  = 1'b0;
-    //#1000;
-    ////stop_f_t  = 1'b1;
+    #1000;
+    stop_f_t  = 1'b1;
     #10;
-    //stop_f_t  = 1'b0;
+    stop_f_t  = 1'b0;
     #4000;
     start_t  = 1'b1;
     #10;
     start_t  = 1'b0;
-    //#400;
-    ////stop_f_t  = 1'b1;
+    #400;
+    stop_f_t  = 1'b1;
     #10;
-    //stop_f_t  = 1'b0;
+    stop_f_t  = 1'b0;
     #4000;
     update   = 1'b1;
     prog     = 3'd3;
@@ -59,9 +59,9 @@ module tb;
     #10;
     start_f  = 1'b0;
     #300;
-    //stop_f_t  = 1'b1;
+    stop_f_t  = 1'b1;
     #10;
-    //stop_f_t  = 1'b0;
+    stop_f_t  = 1'b0;
 	  #8000;
     update   = 1'b1;
     prog = 3'd3;
@@ -73,11 +73,11 @@ module tb;
     #10;
     start_t  = 1'b0;
     #1000;
-    //stop_f_t  = 1'b1;
+    stop_f_t  = 1'b1;
     #10;
-    //stop_f_t  = 1'b0;
-    //#50
-    //reset = 1'b1;
+    stop_f_t  = 1'b0;
+    #50
+    reset = 1'b1;
     #300 
     reset = 1'b0;
   end
