@@ -3,3 +3,8 @@
     <Process Command="vivado" Owner="lucas.damo" Host="gaphs17.portoalegre.pucrsnet.br" Pid="2650044" HostCore="8" HostMemory="30586996">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="gaphs17.portoalegre.pucrsnet.br" Pid="2661146" HostCore="8" HostMemory="30586996">
+    </Process>
+</ProcessHandle>

@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Nov 17 08:50:09 2023
-# Process ID: 2649631
+# Start of session at: Fri Nov 17 09:05:28 2023
+# Process ID: 2660621
 # Current directory: /home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/synth/prod_cons_synth/prod_cons_synth.runs/synth_1
 # Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: /home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/synth/prod_cons_synth/prod_cons_synth.runs/synth_1/top.vds
