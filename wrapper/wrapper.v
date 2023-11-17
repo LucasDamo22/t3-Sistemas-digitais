@@ -48,7 +48,7 @@ assign buffer_empty = empty;
 assign buffer_full = full;
 assign data_2_valid = data_2_valid_int;
 assign data_2 = t_buffer[t_read_pointer];
-assign full = (t_write_pointer == t_read_pointer - 1) ? 1'b1 : 1'b0;
+assign full = (t_write_pointer + 1'b1 == t_read_pointer) ? 1'b1 : 1'b0;
 assign empty = (t_write_pointer == t_read_pointer) ? 1'b1 : 1'b0;
 
 endmodule

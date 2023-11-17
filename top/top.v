@@ -33,8 +33,8 @@ reg [2:0] EA;
 
 assign parity = parity_int;
 assign data_1_en_int = ((f_valid_int == 1'b1) || (t_valid_int ==  1'b1));
-assign f_en_int = ((EA == S_COMM_F) && (~buffer_full)) ? 1'b1 : 1'b0;
-assign t_en_int = ((EA == S_COMM_T) && (~buffer_full)) ? 1'b1 : 1'b0;
+assign f_en_int = ((EA == S_COMM_F) /*&& (~buffer_full)*/) ? 1'b1 : 1'b0;
+assign t_en_int = ((EA == S_COMM_T) /*&& (~buffer_full)*/) ? 1'b1 : 1'b0;
 
 assign data_1 = ((EA == S_COMM_F) || (EA == S_WAIT_F)) ? f_out :
                 ((EA == S_COMM_T) || (EA == S_WAIT_T)) ? t_out :
@@ -126,6 +126,10 @@ always@(posedge clock or posedge reset) begin
   end
 end
 
+wire [1:0]gen_mod_muxed;
+
+assign gen_mod_muxed = (data_2_valid_int == 1'b1) ? gen_mod_int : 2'b00;
+
 parity_check parity_mod(.data(data_2_int), .parity(parity_int));
 edge_detector start_fib(.clock(clock), .reset(reset), .din(start_f), .rising(start_f_ed));
 edge_detector start_tim(.clock(clock), .reset(reset), .din(start_t), .rising(start_t_ed));
@@ -177,7 +181,7 @@ assign prog_int = prog;
   //display
   dm     dm_manag(.clock(clock),
                   .reset(reset),
-                  .gen_mod(gen_mod_int),
+                  .gen_mod(gen_mod_muxed),
                   .prog(prog_out_dcm),
                   .data_2(data_2_int),
                   .an(an),

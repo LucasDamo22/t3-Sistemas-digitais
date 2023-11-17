@@ -43,3 +43,28 @@
     <Process Command="vivado" Owner="lucas.damo" Host="paxos.inf.pucrs.br" Pid="24609" HostCore="28" HostMemory="65491280">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="paxos.inf.pucrs.br" Pid="58563" HostCore="28" HostMemory="65491280">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="paxos.inf.pucrs.br" Pid="9881" HostCore="28" HostMemory="65491280">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="paxos.inf.pucrs.br" Pid="72142" HostCore="28" HostMemory="65491280">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="paxos.inf.pucrs.br" Pid="18861" HostCore="28" HostMemory="65491280">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="paxos.inf.pucrs.br" Pid="61791" HostCore="28" HostMemory="65491280">
+    </Process>
+</ProcessHandle>

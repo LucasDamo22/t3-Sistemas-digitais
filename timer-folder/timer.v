@@ -20,12 +20,11 @@ module timer
             if(t_en) begin
                 count <= count + 1;
             end
-            t_en_int = t_en;
-            t_valid_int <= t_en_int;
+            
         end
     end
     
     assign t_out = count;
-    assign t_valid = t_valid_int;
+    assign t_valid = t_en;
     
 endmodule

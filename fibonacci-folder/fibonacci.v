@@ -45,7 +45,7 @@ always @(posedge clock or posedge reset)
             f_valid_int = 'd0;
         end
     end
-assign f_valid = f_valid_int;
+assign f_valid = f_en;
 assign f_out = f_out_int;
 
 endmodule
