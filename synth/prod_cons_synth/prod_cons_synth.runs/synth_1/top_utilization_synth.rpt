@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Thu Nov 16 17:34:07 2023
-| Host         : paxos.inf.pucrs.br running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Date         : Fri Nov 17 08:51:15 2023
+| Host         : gaphs17.portoalegre.pucrsnet.br running 64-bit Rocky Linux release 8.8 (Green Obsidian)
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
 | Device       : xc7a100tcsg324-1
@@ -56,8 +56,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 12    |          Yes |           - |          Set |
-| 250   |          Yes |           - |        Reset |
+| 13    |          Yes |           - |          Set |
+| 249   |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 129   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -161,9 +161,10 @@ Warning! LUT value is adjusted to account for LUT combining.
 | MUXF7    |   16 |               MuxFx |
 | FDPE     |   12 |        Flop & Latch |
 | IBUF     |    9 |                  IO |
-| LDCE     |    8 |        Flop & Latch |
+| LDCE     |    7 |        Flop & Latch |
 | LUT1     |    4 |                 LUT |
 | BUFG     |    2 |               Clock |
+| LDPE     |    1 |        Flop & Latch |
 | DSP48E1  |    1 |    Block Arithmetic |
 +----------+------+---------------------+
 

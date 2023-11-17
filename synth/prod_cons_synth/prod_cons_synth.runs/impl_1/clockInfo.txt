@@ -1,7 +1,7 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Thu Nov 16 17:34:42 2023
-| Host         : paxos.inf.pucrs.br
+| Date         : Fri Nov 17 08:52:13 2023
+| Host         : gaphs17.portoalegre.pucrsnet.br
 | Design       : design_1
 | Device       : xc7a100t-csg324-1--
 -------------------------------------

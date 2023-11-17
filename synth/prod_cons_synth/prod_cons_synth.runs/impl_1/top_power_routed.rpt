@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date             : Thu Nov 16 17:35:08 2023
-| Host             : paxos.inf.pucrs.br running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Date             : Fri Nov 17 08:52:58 2023
+| Host             : gaphs17.portoalegre.pucrsnet.br running 64-bit Rocky Linux release 8.8 (Green Obsidian)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
 | Device           : xc7a100tcsg324-1
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.001 |      886 |       --- |             --- |
+| Slice Logic    |     0.002 |      886 |       --- |             --- |
 |   LUT as Logic |     0.001 |      322 |     63400 |            0.51 |
 |   CARRY4       |    <0.001 |       51 |     15850 |            0.32 |
 |   Register     |    <0.001 |      391 |    126800 |            0.31 |
 |   Others       |     0.000 |       21 |       --- |             --- |
 |   BUFG         |     0.000 |        1 |        32 |            3.13 |
 |   F7/F8 Muxes  |     0.000 |       16 |     63400 |            0.03 |
-| Signals        |     0.001 |      732 |       --- |             --- |
+| Signals        |     0.001 |      731 |       --- |             --- |
 | DSPs           |    <0.001 |        1 |       240 |            0.42 |
 | I/O            |    <0.001 |       32 |       210 |           15.24 |
 | Static Power   |     0.097 |          |           |                 |
@@ -144,7 +144,7 @@ Table of Contents
 | Name  | Power (W) |
 +-------+-----------+
 | top   |     0.006 |
-|   mod |     0.001 |
+|   mod |     0.002 |
 +-------+-----------+
 
 

@@ -56,7 +56,10 @@ always@(posedge update_clock or posedge reset) begin
   end
 end
 always@(*) begin
-  if(update_clock == 1'b1)begin
+  if(reset) begin
+    multiplier <= 8'd1;
+  end else begin
+    if(update_clock == 1'b1)begin
       case(prog_in)
         3'd0:begin
           multiplier <= 8'd1;
@@ -84,5 +87,6 @@ always@(*) begin
         end
       endcase
     end
+  end
 end
 endmodule 

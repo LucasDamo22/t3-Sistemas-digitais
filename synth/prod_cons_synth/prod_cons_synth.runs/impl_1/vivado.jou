@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Nov 16 17:34:19 2023
-# Process ID: 61898
+# Start of session at: Fri Nov 17 08:51:28 2023
+# Process ID: 2650145
 # Current directory: /home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/synth/prod_cons_synth/prod_cons_synth.runs/impl_1
 # Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: /home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/synth/prod_cons_synth/prod_cons_synth.runs/impl_1/top.vdi
 # Journal file: /home/lucas.damo/Documents/Sistemas-Digitais/T3-luigi/synth/prod_cons_synth/prod_cons_synth.runs/impl_1/vivado.jou
-# Running On: paxos.inf.pucrs.br, OS: Linux, CPU Frequency: 1199.963 MHz, CPU Physical cores: 14, Host memory: 67063 MB
+# Running On: gaphs17.portoalegre.pucrsnet.br, OS: Linux, CPU Frequency: 2927.000 MHz, CPU Physical cores: 4, Host memory: 31321 MB
 #-----------------------------------------------------------
 source top.tcl -notrace
